@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #EFECFD;
+}
+
+.container {
+    margin: 1rem;
+    text-align: center;
+    color: #1B1A1F;
+    margin-top: 3%;
+}
+
+.nav {
+    background-color: #1B1A1F;
+    color: #EFECFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.site-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active {
+    background-color: #5D28E2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    background-color: #271C44;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.active {
+    background-color: #5D28E2;
+}
+
+a {
+    color: #5469d4;
+    text-decoration: unset;
+}
+
+.padding-top--64 {
+    padding-top: 64px;
+}
+
+.padding-top--24 {
+    padding-top: 24px;
+}
+
+.padding-top--48 {
+    padding-top: 48px;
+}
+
+.padding-bottom--24 {
+    padding-bottom: 24px;
+}
+
+.padding-horizontal--48 {
+    padding: 48px;
+}
+
+.padding-bottom--15 {
+    padding-bottom: 15px;
+}
+
+.flex-justifyContent--center {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.formbg,
+.card {
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 448px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+span {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1B1A1F;
+}
+
+label {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.grid--50-50 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.field input,
+textarea {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: #5D28E2;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+input[type="submit"] {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 5px 0px, #5D28E2 0px 0px 0px 2px, rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    color: #5D28E2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonstyle {
+    font-size: 16px;
+    background-color: #5D28E2;
+    color: #EFECFD;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 8px 16px;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+
+/* Search Bar */
+
+.search-card {
+    margin: 0px auto;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 448px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+.search-bar {
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+.range-picker {
+    margin: 0px auto;
+    margin-top: 30px;
+    max-width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+
+/* Table Styles */
+
+.table-wrapper {
+    margin: 30px 200px 200px;
+    box-shadow: 0px 3px 50px rgba( 0, 0, 0, 0.2);
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #5D28E2;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #271C44;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #ffffff;
+}
+
+
+/* Blog Cards */
+
+.card {
+    background-color: #1B1A1F;
+    color: #f8f8f8;
+    padding: 30px;
+    border-radius: 20px;
+    border: 0px;
+    border-color: #5D28E2;
+    border-style: solid;
+    transition: 100ms;
+    max-width: 450px;
+    /*margin-left: 36%;*/
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.card:hover {
+    transition: 100ms;
+    border: 2px;
+    border-color: #5D28E2;
+    border-style: solid;
+}
+
+.card-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.profile {
+    width: 8rem;
+    height: 3rem;
+    background-color: #5D28E2;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.letter {
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.card-title-group {
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.card-title {
+    flex: 0.5;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+.card-date {
+    flex: 0.3;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.card-like-icon {
+    height: 25px;
+}
+
+.card-text {
+    margin-top: 30px;
+    width: 400px;
+    text-align: left;
+    margin: 10px;
+}
+
+.card-like-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.like-text {
+    margin-right: 275px;
+}
